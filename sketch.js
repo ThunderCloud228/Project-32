@@ -8,6 +8,9 @@ var backgroundImg;
 
 var bg;
 
+// write code slice the datetime
+var hour = dt.slice(11, 13);
+
 function preload() {
     getBackgroundImg();
 }
@@ -40,9 +43,6 @@ async function getBackgroundImg() {
     //change the data in JSON format
     var responseJSON = await response.json();
     var dt = responseJSON.datetime;
-
-    // write code slice the datetime
-    var hour = dt.slice(11, 13);
     
     //text("Time: " +hour +"hr", 100, 100);
 
